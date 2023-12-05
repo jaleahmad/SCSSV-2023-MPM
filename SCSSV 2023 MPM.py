@@ -80,11 +80,12 @@ def getUnPivotPI(df,colLabelPI,WellNameUPD):
     return dfUnpiv 
 
 root_path = 'C:/Users/jale_ahmad/Downloads/2023/SCSSV/P2/Data/'
-dfUPD = pd.read_excel('C:/Users/jale_ahmad/Downloads/2023/SCSSV/P2/Data/Dulang/UPD/Latest Dulang UPD.xlsx', parse_dates=['OPNS DATE'])
-dfUPD.rename(columns={'OPNS DATE':'Date'}, inplace= True)
+# dfUPD = pd.read_excel('C:/Users/jale_ahmad/Downloads/2023/SCSSV/P2/Data/Dulang/UPD/Latest Dulang UPD.xlsx', parse_dates=['OPNS DATE'])
+# dfUPD.rename(columns={'OPNS DATE':'Date'}, inplace= True)
 
-dfUPD_Accepted, WellNameUPD, Freq = getUPD_Accepted(dfUPD, 'WELL', minCount = 1)
+# dfUPD_Accepted, WellNameUPD, Freq = getUPD_Accepted(dfUPD, 'WELL', minCount = 1)
 
+WellNameUPD =['W-A-01','W-A-19S']
 #-----
 # GUI
 #-----
